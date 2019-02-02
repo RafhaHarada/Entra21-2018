@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo 07 - Campo Texto</title>
+</head>
+<body 
+	style="
+		background-image: url(https://i.kym-cdn.com/photos/images/original/001/358/519/c22.gif); 
+		background-size: 100%;
+		background-repeat: no-repeat;">
+
+		<!--https://thumbs.gfycat.com/MarriedBeautifulIndusriverdolphin-size_restricted.gif
+		https://thumbs.gfycat.com/GenerousThinHerring-max-1mb.gif
+		http://images.uncyc.org/pt/f/f0/Gretchen_foda-se.gif 
+		https://i.imgur.com/BMUGVfe.jpg-->
+
+
+		<!-- guarda as informações num formulário em urna.html-->
+		<form action="urna.html" method="POST">
+			<label for="campo-nome">Nome</label>
+			<input type="text" id="campo-nome" name="nome"></br></br>
+	
+			<label for="campo-idade">Idade</label>
+			<input type="number" id="campo-idade" name="idade"></br></br>
+	
+			<label for="campo-email">E-mail</label>
+			<input type="e-mail" id="campo-email" name="email"></br></br>
+
+			<label>Sexo</label>
+			<input type="radio" value="Feminino" name="sexo" id="campo-sexo-feminino">
+			<label for="campo-sexo-feminino">Feminino</label>
+			<input type="radio" value="Masculino" name="sexo" id="campo-sexo-masculino">
+			<label for="campo-sexo-masculino">Masculino</label></br></br>
+
+			<label>Cor do olho</label>
+			<input type="checkbox" value="preto" name="olhoCor" id="campo-cor-olho-preto">
+			<label for="campo-cor-olho-preto">Preto</label>
+			<input type="checkbox" value="marrom" name="olhoCor" id="campo-cor-olho-marrom">
+			<label for="campo-cor-olho-marrom">Marrom</label>
+			<input type="checkbox" value="azul" name="olhoCor" id="campo-cor-olho-azul">
+			<label for="campo-cor-olho-azul">Azul</label>
+			<input type="checkbox" value="verde" name="olhoCor" id="campo-cor-olho-verde">
+			<label for="campo-cor-olho-verde">Verde</label></br></br>
+
+			<label for="campo-data">Data de Nascimento</label>
+			<input type="date" id="campo-data"></br></br>
+
+			<label for="campo-senha">Senha</label>
+			<input type="password" id="campo-senha"></br></br>
+
+			<label for="campo-fio">Cor do fio do cabelo</label>
+			<input type="color" id="campo-fio"></br></br>
+
+			<label for="campo-arquivo">Arquivo</label>
+			<input type="file" id="campo-arquivo"></br></br>
+
+			<input type="reset" value="reset">
+			<input type="submit" value="Cadastrar">
+			<p></p>
+			<p></p>
+			<input type="button" value="Reload" onClick="history.go(0)">
+		</form>
+</body>
+</html>

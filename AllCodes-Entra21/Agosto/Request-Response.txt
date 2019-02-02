@@ -1,0 +1,6 @@
+client faz request para o server
+server faz response para o cliente
+
+client pede html
+server compila os dados e manda o conteudo gerado
+client recebe e o browser compila os novos dados e apresenta ao client

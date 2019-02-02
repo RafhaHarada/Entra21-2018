@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alimentos - Editar</title>
+</head>
+<body>
+<form action='/alimentos/update' method='post'>
+<input type='hidden' name='id' value='1'>
+<div>
+<label for='campo-nome'>Nome</label>
+<input type='text' id='campo-nome' name='nome'>
+</div>
+
+<div>
+<label for='campo-quantidade'>Quantidade</label>
+<input type='text' id='campo-quantidade' name='quantidade'>
+</div>
+
+<div>
+<label for='campo-preco'>Preço</label>
+<input type='text' id='campo-preco' name='preco'>
+</div>
+
+<div>
+<label for='campo-descricao' >Descrição</label>
+<textarea name='descricao' id='campo-descricao'></textarea>
+</div>
+<input type='submit' value='Cadastrar'>
+
+</form>
+</body>
+</html>

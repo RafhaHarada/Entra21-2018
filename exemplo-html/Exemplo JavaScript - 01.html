@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo JavaScript - 01</title>
+</head>
+<body>
+	<fieldset>
+		<label>Número 01</label>
+		<input type="number" id="numero01">
+	</fieldset>
+	<fieldset>
+		<label>Número 02</label>
+		<input type="number" id="numero02">
+	</fieldset>
+	<a href="#" onclick="concatenarTextoEstatico()">Concatenar Texto!</a></br>
+	<a href="#" onclick="calcular()">Calcular!</a>
+	<script>
+
+		function calcular(){
+			var numero01 = parseInt(document.getElementById("numero01").value);
+			var numero02 = parseInt(document.getElementById("numero02").value);
+			var soma = numero01 + numero02;
+			alert('A soma é: ' + soma);
+		}
+		function concatenarTextoEstatico(){
+			var nome = 'Francisco';
+			var sobrenome = 'Lucas Sens';
+			var nomeCompleto = nome + ' ' + sobrenome;
+			console.log('Nome Completo: ' + nomeCompleto)
+		}
+	</script>
+</body>
+</html>

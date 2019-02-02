@@ -1,0 +1,573 @@
+<!-- 
+Document   : index
+Created on : 26/08/2018, 17:47:02
+Author     : @Luana Patricia Duarte (luanapatricia.blu@hotmail.com)
+             @Gustavo Rodrigues (gugaaroodrigues@gmail.com)
+             @Rafael Alipio Harada (rafhaharada@gmail.com)
+             @Nattana Matos (nattana.matos@Outlook.pt)
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Blu Vitality</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="377062664693-qt543mqqgviu416aaqij0sbk642k5tnn.apps.googleusercontent.com">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="resources/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/custom.css">
+    </head>
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <nav class="nav-extended white lighten-2 z-depth-0">
+                <div class="nav-wrapper">
+                    <a href="#Inicio" class="brand-logo"><img src="resources/images/logo.gif" class="imagem-logo"></a>
+                    <a href="#" data-target="mobile" class="sidenav-trigger teal-text"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="/">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" href="#" data-target="dropdown2">Serviços</a>
+                            <!-- Dropdown Structure -->
+                            <ul id="dropdown2" class="dropdown-content">
+                                <li><a href="#Servicos" class="botao-servicos" data-id="1">Agência Transfuncional</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="2">Centro Cirurgico</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="3">Centro Check-up</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="5">Centro de Oncologia</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="6">Clínica de Saúde Mental</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="7">CTI Adulto</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="9">Fisioterapia</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="10">Internação</a></li>
+                                <li><a href="#Servicos" class="botao-servicos" data-id="11">Pronto Atendimento</a></li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" href="#" data-target="dropdown3">Exames</a>
+                            <!-- Dropdown Structure -->
+                            <ul id="dropdown3" class="dropdown-content">
+                                <li><a href="#Exames" class="botao-exames" data-id="1">Cardiológicos</a></li>
+                                <li><a href="#Exames" class="botao-exames" data-id="2">Diagnóstico por Imagem</a></li>
+                                <li><a href="#Exames" class="botao-exames" data-id="3">Endoscopia</a></li>
+                                <li><a href="#Exames" class="botao-exames" data-id="4">Laboratoriais</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" href="#" data-target="dropdown4">Contatos</a>
+                            <!-- Dropdown Structure -->
+                            <ul id="dropdown4" class="dropdown-content">
+                                <li><a href="#Contatos" class="botao-contatos" data-id="1">Agende uma consulta</a></li>
+                                <li><a href="#Contatos" class="botao-contatos" data-id="2">Agende um exame</a></li>
+                                <li><a href="#Contatos" class="botao-contatos" data-id="3">Central de Orçamento</a></li>
+                                <li><a href="#Contatos" class="botao-contatos" data-id="4">Trabalhe Conosco</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" data-target="dropdown5">Sobre</a>
+                            <ul id="dropdown5" class="dropdown-content">
+                                <li class="tab"><a href="#Sobre" class="botao-sobre" data-id="1">Nossa História</a></li>
+                                <li class="tab"><a href="#Sobre" class="botao-sobre" data-id="2">Missão, Visão e Valores</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <!--mobile e tablet side nav-->
+            <ul class="sidenav" id="mobile">
+                <li>
+                    <a href="#" class="sidenav-close waves-effect waves-teal teal"><i class="material-icons white-text">arrow_back</i></a>
+                </li>
+                <li><div class="user-view">
+                        <div class="background">
+                            <img src="resources/images/slider1.jpg">
+                        </div>
+
+                        <a href="usuario/login"><img id="user-photo" class="circle" alt="" src="resources/images/usuario.png"></a>
+                        <a href="usuario/login"><span id="user-name" class="white-text name">Entrar</span></a>
+                        <a href="usuario/cadastro"><span id="user-email" class="white-text email">Cadastrar</span></a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect waves-teal">Serviços<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="1">Agência Transfuncional</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="2">Centro Cirurgico</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="3">Centro Check-up</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="4">Centro Diagnostico por imagem</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="5">Centro de Oncologia</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="6">Clínica de Saúde Mental</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="7">CTI Adulto</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="9">Fisioterapia</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="10">Internação</a></li>
+                                    <li><a href="#Servicos" class="botao-servicos waves-effect waves-teal" data-id="11">Pronto Atendimento</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-teal">Exames<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#Exames" class="waves-effect waves-teal botao-exames" data-id="1">Cardiológicos</a></li>
+                                    <li><a href="#Exames" class="waves-effect waves-teal botao-exames" data-id="2">Diagnóstico por Imagem</a></li>
+                                    <li><a href="#Exames" class="waves-effect waves-teal botao-exames" data-id="3">Endoscopia</a></li>
+                                    <li><a href="#Exames" class="waves-effect waves-teal botao-exames" data-id="4">Laboratoriais</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-teal">Contatos<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#Contatos" class="waves-effect waves-teal botao-contatos" data-id="1">Agende uma consulta</a></li>
+                                    <li><a href="#Contatos" class="waves-effect waves-teal botao-contatos" data-id="2">Agende um exame</a></li>
+                                    <li><a href="#Contatos" class="waves-effect waves-teal botao-contatos" data-id="3">Central de Orçamento:</a></li>
+                                    <li><a href="#Contatos" class="waves-effect waves-teal botao-contatos" data-id="4">Trabalhe Conosco</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-teal">Sobre<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#Sobre" id="-1" class="waves-effect waves-teal botao-sobre" data-id="1">Nossa História</a></li>
+                                    <li><a href="#Sobre" id="-2" class="waves-effect waves-teal botao-sobre" data-id="2">Missão, Visão e Valores</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="/resources/images/slider1.jpg" alt=""> <!-- random image -->
+                        <div class="caption left-align black-text">
+                            <h3>Blu Vitality</h3>
+                            <h5>Vital para você, vital para nós.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/resources/images/slider2.png" alt=""> <!-- random image -->
+                        <div class="caption left-align black-text">
+                            <h3>Alta Tecnologia e Gestão</h3>
+                            <h5>Tenha mais mobilidade e eficiência.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/resources/images/slider3.jpg" alt=""> <!-- random image -->
+                        <div class="caption left-align black-text">
+                            <h3>Visite Nosso Hospital</h3>
+                            <h5>Estruturado,organizado e preparado!</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Conteúdo-->
+        <main>
+            <div class="white" id="Servicos">
+                <nav>
+                    <div class="nav-wrapper teal accent-4">
+                        <div class="container">
+                            <span class="brand-logo">Servicos</span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#Servicos1" class="active teal-text">Agência Transfuncional</a></li>
+                        <li class="tab"><a href="#Servicos2" class="teal-text">Centro Cirurgico</a></li>
+                        <li class="tab"><a href="#Servicos3" class="teal-text">Centro Check-up</a></li>
+                        <li class="tab"><a href="#Servicos5" class="teal-text">Centro de Oncologia</a></li>
+                        <li class="tab"><a href="#Servicos6" class="teal-text">Clínica de Saúde Mental</a></li>
+                        <li class="tab"><a href="#Servicos7" class="teal-text">CTI Adulto</a></li>
+                        <li class="tab"><a href="#Servicos9" class="teal-text">Fisioterapia</a></li>
+                        <li class="tab"><a href="#Servicos10" class="teal-text">Internação</a></li>
+                        <li class="tab"><a href="#Servicos11" class="teal-text">Pronto Atendimento</a></li>
+                    </ul>
+                    <div id="Servicos1" class="col s12 container teal white">
+                        <div class="row">
+                            <div class="col s12 ">
+                                <div class="flow-text black-text">
+                                    <h5>
+                                        Agência transfuncional é o setor responsável por todo  o 
+                                        controle de  hemocomponentes e armazenamentos de sangue 
+                                        e seus derivados, contamos também com uma grande diversidade 
+                                        de  serviços de testes - transfuncionais , transfusões e 
+                                        testes de tipagem sanguínea que dispõem em escolher a bolsa 
+                                        de sangue mais propícia para seus pacientes.
+                                        Também dispomos de doações de banco de sangue para outras 
+                                        clínicas,pois a nossa visão é ‘’Cuidar dos nossos pacientes e 
+                                        colaboradores proporcionando uma qualidade de vida melhor e buscando 
+                                        sempre uma integração com a tecnologia’’</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Servicos2" class="col s12 container teal white">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        O nosso centro cirúrgico conta com a mais nova tecnologia 
+                                        em nossos aparelhos e viabiliza a efetuação de cirurgias 
+                                        minimamente invasivas guiadas por imagem que possibilita 
+                                        o sucesso das demais cirurgias procedidas em nosso hospital 
+                                        e também executamos desde os procedimentos mais simples aos 
+                                        mais complexos como: cirurgias cardíacas, ortopédicas, neurológicas 
+                                        e demais especialidades.A equipe que atua na unidade de centro cirúrgico 
+                                        estabelece uma coordenação com as demais equipes e serviços como, por exemplo, 
+                                        laboratórios, radiologia, banco de sangue, oferecendo assistência adequada às 
+                                        necessidades dos pacientes. Bem equipado, nosso hospital tem uma estrutura com 
+                                        5 salas cirúrgicas com centro de recuperação pós-anestésico para melhor comodidade
+                                        do nosso paciente.</h5>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>     
+                </div>
+                <div id="Servicos3" class="col s12 container teal white">
+                    <div class="row">
+                        <div class="col s12 ">
+                            <div class="col s12">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        O centro de check-up atua com o propósito de aumentar a 
+                                        qualidade de vida de nossos pacientes,contamos um serviços 
+                                        de várias especialidades, em um único só dia você pode fazer 
+                                        o seu ‘’check-up’’ com todo conforto e segurança a fim de evitar 
+                                        e prevenir doenças com um histórico familiar ou apenas para o seu bem estar.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Servicos5" class="col s12 container teal white">
+                    <div class="row">
+                        <div class="col s12 ">
+                            <div class="col s12">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        Contamos com consultas com oncologistas espelializados,
+                                        quimioterapia,reabilitação,pronto atendimento oncológico,
+                                        diagnóstico por imagem,exames clínicos e patológicos 
+                                        radioterapia,radioterapia e medicina integrativa para o 
+                                        seu melhor tratamento. </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Servicos6" class="col s12 container teal white">
+                    <div class="row">
+                        <div class="col s12 ">
+                            <div class="col s12">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        Tem a missão de cuidar da sua saúde mental 
+                                        e proporcionar equilíbrio entre as atividades e  
+                                        transtornos da nossa mente como por exemplo crises 
+                                        de ansiedade e mudanças bruscas de humor esquizofrenia 
+                                        entre outros.Como muitos pensam que ‘’saúde mental só 
+                                        cuida quem é louco’’  mas estamos para atender a todo no 
+                                        que precisar mesmo que só queira uma conversa para melhorar o 
+                                        estresse do dia-a-dia.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Servicos7" class="col s12 container teal white">
+                    <div class="row">
+                        <div class="col s12 ">
+                            <div class="col s12">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        Composto de duas unidades: UTI geral e UTI cardiológica.
+
+                                        CTI Geral é para atendimentos de pacientes com doenças 
+                                        graves ou que foram submetidos a cirurgias de alta 
+                                        complexidade,temos o objetivo de atender você para 
+                                        melhor recuperação.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Servicos9" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="col s12">
+                            <div class="card-content black-text">
+                                <h5>
+                                    Voltada para a cura e reabilitação nós oferecemos 
+                                    todo o acompanhamento necessário para o progresso de 
+                                    nossos pacientes,contamos com os mais qualificados 
+                                    profissionais e técnicas específicas de acordo com a complexidade do paciente.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Servicos10" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="col s12">
+                            <div class="card-content black-text">
+                                <h5>
+                                    O Blu Vitality conta com um quarto de internação dentro 
+                                    padrões de conforto e necessidade dos pacientes. 
+                                    Temos opções de quartos privados ou coletivos.
+                                    Entre outra acomodações.</h5>
+                                <h5>Documentos necessário para a internação:</h5>
+
+                                <h5>Do paciente:</h5>
+
+                                <h5>Carteirinha do Blu Vitality.</h5>
+                                <h5>Solicitação da internação.</h5>
+                                <h5>Todos os exames pré operatório e os referentes.</h5>
+                                <h5>Se caso tiver convênios comparecer com a carteirinha na recepção</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Servicos11" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="card-content black-text">
+                            <h5> A nossa unidade de pronto atendimento conta 
+                                com uma complexidade implantado em Blumenau,Santa Catarina 
+                                para atuar em situações de urgência e emergência.Por isso que 
+                                no pronto-atendimento você encontra toda a infraestrutura 
+                                necessária e o aconchego que nossa equipe dá a você nesses 
+                                momentos difícil, procuramos sempre reduzir o tempo de ser 
+                                atendimento para agilizar consideravelmente uma melhor recuperação.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row"></div>
+            <div class="parallax-container">
+                <div class="parallax parallax-imagem"><img src="resources/images/bg2.gif" alt=""></div>
+            </div>
+            <div class="row"></div>
+            <div class="white" id="Exames">
+                <nav>
+                    <div class="nav-wrapper teal accent-4">
+                        <div class="container">
+                            <span class="brand-logo">Exames</span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#Exames1" class="active teal-text">Cardiológicos</a></li>
+                        <li class="tab"><a href="#Exames2" class="teal-text">Diagnóstico por Imagem</a></li>
+                        <li class="tab"><a href="#Exames3" class="teal-text">Endoscopia</a></li>
+                        <li class="tab"><a href="#Exames4" class="teal-text">Laboratoriais</a></li>
+                    </ul>
+                    <div id="Exames1" class="col s12 container teal white">
+                        <div class="row">
+                            <div class="col s12 ">
+                                <div class="card-content black-text">
+                                    <h5>O funcionamento do coração pode ser avaliado por uma 
+                                        grande diversidade de exames, cada um com as suas funções, 
+                                        que são escolhidos pelo cardiologista ou clínico geral de acordo 
+                                        com cada caso.</h5>
+                                    <h5>Exames realizados:</h5>
+                                    <h5>Cintilografia do Miocárdio</h5>
+                                    <h5>Ecocardiograma</h5>
+                                    <h5>Eletrocardiograma</h5>
+                                    <h5>Holter</h5>
+                                    <h5>M.A.P.A.</h5>
+                                    <h5>Teste Ergométrico </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Exames2" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="card-content black-text">
+                            <h5>As radiografias proporcionam informações 
+                                importantes para a decisão dos futuros 
+                                passos de diagnostico, um tratamento ou 
+                                acompanhamento de um procedimento. Então, 
+                                o nível necessário de qualidade de imagem para 
+                                o correto diagnostica tem que ser obtido na mais 
+                                baixa dose de radiação possível ao paciente.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Exames3" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="card-content black-text">
+                            <h5>Este exame é comumente solicitado para diagnosticar 
+                                ou tratar doenças que atinjam o sistema digestivo alto, 
+                                que podem apresentar sintomas como: dores abdominais persistentes, 
+                                náuseas, vômitos e/ou dificuldade de deglutição.
+
+                                Esse exame também pode ser requerido para a retirada de objetos 
+                                que possam ter sido engolidos acidentalmente ou, ainda, pode ser 
+                                utilizado para a realização de biópsias da mucosa do esôfago, estômago 
+                                ou duodeno, a fim de detectar doenças e condições.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Exames4" class="col s12 container teal white">
+                <div class="row">
+                    <div class="col s12 ">
+                        <div class="card-content black-text">
+                            <h5>Os exames laboratoriais são uma série de exames ou 
+                                testes indicados pelo médico ou em laboratórios de 
+                                análises clínicas, afim de diagnosticar ou atestar uma 
+                                doença. Eles também podem ser utilizados para a realização 
+                                de exames de rotina, conhecidos como check-up</h5>
+                            <h5>Exames realizados no hospital:</h5>
+                            <h5>Colesterol</h5>
+                            <h5>Glicose</h5>
+                            <h5>Hemácias (glóbulos vermelhos)</h5>
+                            <h5>Hemograma</h5>
+                            <h5>Leucócitos (glóbulos brancos)</h5>
+                            <h5>Plaquetas</h5>
+                            <h5>Ureia e Creatinina</h5>
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row"></div>
+            <div class="parallax-container">
+                <div class="parallax parallax-imagem"><img src="resources/images/bg3.jpg" alt=""></div>
+            </div>
+            <div class="row"></div>
+            <div class="white" id="Sobre">
+                <nav>
+                    <div class="nav-wrapper teal accent-4">
+                        <div class="container">
+                            <span class="brand-logo">Sobre</span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#Sobre1" class="active teal-text">Nossa História</a></li>
+                        <li class="tab"><a href="#Sobre2" class="teal-text">Missão, Visão e Valores</a></li>
+                    </ul>
+                    <div id="Sobre1" class="col s12 container teal white">
+                        <div class="row">
+                            <div class="col s12 ">
+                                <div class="card-content black-text">
+                                    <h5>
+                                        Tudo começou a partir da dificuldade em atender as 
+                                        pessoas por um meio de comunicação além do telefone,
+                                        sentimos a necessidade de ter um contato e acompanhar 
+                                        nossos pacientes por mais perto,para proporcionar todo o 
+                                        conforto dentro do seu lar.No começo nossa equipe era 
+                                        formada por apenas 5 pessoas que que trabalhavam apenas 
+                                        em um pequeno consultório médico que passou por várias 
+                                        dificuldades,mas em 2018 inauguramos o nosso primeiro 
+                                        prédio,ainda assim conquistando essa vitória percebemos 
+                                        que podemos ir mais longe só um prédio físico não era o 
+                                        bastante para transformar e salvar vidas,não parando 
+                                        por ai, nossa equipe buscou o'que tem de mais novo na 
+                                        tecnologia de tratamento e exames e esse é o nosso diferencial, 
+                                        hoje além de um prédio com grande infraestrutura também contamos 
+                                        com a tecnologia de ponta.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div id="Sobre2" class="col s12 container teal white">
+                    <div class="row">
+                        <div class="col s12 ">
+                            <div class="card-content black-text">
+                                <p>
+                                <h5>Missão:</h5>
+
+                                <h5>‘’Cuidar dos nossos pacientes e colaboradores proporcionando uma qualidade de vida melhor e buscando sempre uma integração com a tecnologia".</h5>
+                                <h5>Visão:</h5>
+                                <h5>"Ser um hospital de referência em tecnologia e inovação".</h5>
+                                <h5>Valores:</h5>
+                                <h5>-Respeito acima de tudo</h5>
+                                <h5>-Credibilidade com as vidas</h5>
+                                <h5>-Sustentabilidade</h5>
+                                <h5>-Confiança</h5>
+                                <h5>-Cuidado com a segurança do paciente</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row"></div>
+            <div class="parallax-container">
+                <div class="parallax parallax-imagem"><img src="resources/images/bg4.jpg" alt=""></div>
+            </div>
+            <div class="row"></div>
+        </main>
+
+        <!--Roda pé-->
+        <footer class="page-footer teal accent-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Contatos Rápidos</h5>
+                        <h6 class="white-text">Fale Conosco</h6>
+                        <p class="grey-text text-lighten-4">Telefone: +55 (xx) xxxx-xxxx</p>
+                        <p class="grey-text text-lighten-4">E-mail: bluvitality@gmail.com</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Termos de Uso</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Politica de Privacidade</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Desenvolvedores do Site</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Ajuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © BluVitality 2018 All Rights Reserved  
+                </div>
+            </div>
+        </footer>
+
+        <!--   JavaScript Setup  -->
+        <script type="text/javascript" src="resources/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="resources/js/google-platform.js"></script>
+        <script type="text/javascript" src="resources/js/materialize.min.js"></script>
+        <script type="text/javascript" src="resources/js/custom.js"></script>
+    </body>
+</html>

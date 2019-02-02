@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('/WebExercicio01/resources/fonts/Fipps-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+body { 
+    background: url('/WebExercicio01/resources/images/bg3.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.my-navbar {
+  font-family: 'myfont';
+  overflow: hidden;
+  background-color: #000d8e;  
+  background-image: url('/WebExercicio01/resources/images/bg5.gif');
+
+}
+
+/* Links inside the navbar */
+.my-navbar a {
+  float: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nyanCat{
+    background-image: url('/WebExercicio01/resources/images/bg5.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 50px;
+}
+
+/* The dropdown container */
+.my-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.my-dropdown .my-dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.my-navbar a:hover, .my-dropdown:hover .my-dropbtn {
+  background-color: #0e1fcc;
+}
+
+/* Dropdown content (hidden by default) */
+.my-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000d8e;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.my-dropdown-content a {
+  float: none;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.my-dropdown-content a:hover {
+  background-color: #0e1fcc;
+}
+
+/* Show the dropdown menu on hover */
+.my-dropdown:hover .my-dropdown-content {
+  display: block;
+}

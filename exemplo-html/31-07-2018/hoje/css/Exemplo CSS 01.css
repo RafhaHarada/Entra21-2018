@@ -1,0 +1,43 @@
+.botao{
+			display: block;
+			background-color: #0B4A0F;
+			color:#C4C4C4;
+			font-weight: bold;
+			width: 100px;
+			height: 100px;
+			text-decoration: none;
+			text-align: center;
+			border: 5px ridge darkturquoise;
+			border-radius: 60px;
+			line-height: 90px;
+			/*border-color: white;
+			  border-width:1px;
+			  border-
+			*/
+}
+.botao:hover{
+	background-color: #116B17;
+}
+.botao:active{
+	background-image: url(../imagens/1.gif);
+	background-size: 100%
+}
+.img{
+	height: 100px;
+	width: 100px;
+	background-image: url(../imagens/2.gif);
+	background-size: 100%;
+}
+.campo-texto{
+	border: 0px;
+	border-bottom: 1px solid red;
+}
+.campo-texto:focus{
+	border: 0px;
+	border-bottom: 1px solid yellow;
+}
+.campo-texto:active{
+	background-image: url(../imagens/1.gif);
+	background-size: 100%;
+	line-height: -50px;
+}

@@ -1,0 +1,34 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.lista{
+	margin:0 15%;
+	
+}
+table{
+	width: 100%;
+	border:1px solid none;
+}
+thead tr, tfoot tr{
+	height: 45px;
+	font-size: 19px;
+	background-color: #1A407A;
+	color: white;
+}
+tbody tr{
+	height: 40px;
+	background-color: #7089AE;
+	font-size: 18px;
+}
+td{
+	padding-left: 10px;
+}
+table tr:nth-child(odd) td{
+	background-image: url(../imagens/3.gif);
+	background-size: 100%;
+}
+table tr:nth-child(even) td{
+	background-image: url(../imagens/4.gif);
+	background-size: 100%;
+}

@@ -1,0 +1,98 @@
+/* 
+    Created on : 16/08/2018, 11:07:40
+    Author     : @Rafael Alipio Harada (rafhaharada@gmail.com)
+                 @Nattana Matos (nattana.matos@Outlook.pt)
+                 @Luana Patricia Duarte (luanapatricia.blu@hotmail.com)
+                 @Gustavo Rodrigues (gugaaroodrigues@gmail.com)
+*/
+
+.imagem-logo{
+    margin-left: 60px;
+    width: 200px;
+    height: 100px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: teal;
+} 
+::-webkit-scrollbar{
+    height:10px;
+    width:10px;
+}
+
+.sub-menu-mobile{
+    padding-right: 40%; 
+    margin-left: 20%;
+    color: black;
+}
+
+.text-bold{
+    -webkit-text-stroke-width: 0.3px;
+}
+
+.fixed-action-btn {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+
+.tabs{
+    height: 60px;
+    z-index: 1;
+}
+.tabs .tab a {
+    height: 60px;
+}
+
+.tabs-content.carousel .carousel-item {
+    height: auto; 
+}
+
+.tabs-transparent .tab a {
+    color: blue;
+}
+
+.pin-top, .pin-bottom {
+    position: relative;
+    z-index: 2;
+}
+
+.pinned {
+    position: fixed !important;
+    z-index: 2;
+}
+div ul a{
+    color:teal
+}
+nav a.sidenav-trigger{
+    display:block
+}
+
+.nav-wrapper{
+    margin-bottom: 40px;
+}
+
+.parallax-imagem{
+    background-size: 100% 100px;
+}
+.card .card-action p {
+    margin: 0;    
+}
+
+.collection{
+    border: none;
+}
+
+.margin-botao{
+    margin-top: 350px;
+}
+
+.scrollBarOnDiv{
+    overflow-y: scroll;
+}
+
+.btnacessorapido btn{
+    
+    margin: 4px;
+}
